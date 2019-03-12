@@ -28,6 +28,7 @@
 //                 Loïk Gaonac'h <https://github.com/loikg>
 //                 Roberto Zen <https://github.com/skyzenr>
 //                 Richard Cornelissen <https://github.com/richardcornelissen>
+//                 David Lee <https://github.com/penguinbroker>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 
@@ -540,7 +541,7 @@ export type StatementPrincipal = MaybeStatementResource & ({ Principal: Principa
  * https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-lambda-authorizer-output.html
  */
 export interface AuthResponseContext {
-    [name: string]: boolean | number | string;
+    [name: string]: boolean | number | string | object;
 }
 
 /**
